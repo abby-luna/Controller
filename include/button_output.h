@@ -16,6 +16,7 @@ namespace controls{
     for (int i = 0; i <= MOTORS; i++) {
       if(ControllerPorts[i].cont_id == "2"){
         ControllerPorts[i].port_id.setVelocity(MasterController.Axis2.position(percent), percent);
+        ControllerPorts[i].port_id.spin(forward);
       }
     }
   }
@@ -24,6 +25,7 @@ namespace controls{
     for (int i = 0; i <= MOTORS; i++) {
       if(ControllerPorts[i].cont_id == "3"){
         ControllerPorts[i].port_id.setVelocity(MasterController.Axis3.position(percent), percent);
+        ControllerPorts[i].port_id.spin(forward);
       }
     }    
   }
@@ -31,7 +33,8 @@ namespace controls{
   void axis4(){
     for (int i = 0; i <= MOTORS; i++) {
       if(ControllerPorts[i].cont_id == "4"){
-        ControllerPorts[i].port_id.setVelocity(MasterController.Axis3.position(percent), percent);
+        ControllerPorts[i].port_id.setVelocity(MasterController.Axis4.position(percent), percent);
+        ControllerPorts[i].port_id.spin(forward);
       }
     }    
   }

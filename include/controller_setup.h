@@ -20,6 +20,11 @@ Note, negitve values cuase a dirrection change in the motor
 
 #define MOTORS 8
 
+
+
+///          127, 127
+
+/// -127, 127   0,0   127, -127
 port ControllerPorts[MOTORS] = {
   {
     vex::motor(PORT7),
@@ -30,12 +35,12 @@ port ControllerPorts[MOTORS] = {
     "b",
     -127
   },{
-    vex::motor(PORT2),
-    "1",
+    vex::motor(PORT1, true),
+    "3",
     127
   },{
-    vex::motor(PORT1),
-    "1",
+    vex::motor(PORT10),
+    "3",
     127
   },{
     vex::motor(PORT2),

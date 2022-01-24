@@ -53,8 +53,8 @@ namespace new_controller{
       controls::axis3();
       controls::axis4(); 
 
-      log();
-      wait(.001, seconds);
+      //log();
+      wait(.01, seconds);
 
     }
   }
