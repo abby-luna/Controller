@@ -30,7 +30,7 @@ namespace controls{
 
   void axis4(){
     for (int i = 0; i <= MOTORS; i++) {
-      if(ControllerPorts[i].cont_id == "3"){
+      if(ControllerPorts[i].cont_id == "4"){
         ControllerPorts[i].port_id.setVelocity(MasterController.Axis3.position(percent), percent);
       }
     }    
@@ -147,6 +147,7 @@ namespace controls{
     }
 
     void buttonX(){
+
       for (int i = 0; i <= MOTORS; i++) {
         if(ControllerPorts[i].cont_id == "x"){
           ControllerPorts[i].port_id.setVelocity(ControllerPorts[i].max_vel, percent);

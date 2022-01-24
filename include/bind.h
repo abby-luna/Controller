@@ -9,14 +9,14 @@ namespace new_controller{
     // pressing A B X Y
     MasterController.ButtonA.pressed(controls::downward::buttonA);
     MasterController.ButtonB.pressed(controls::downward::buttonB);
-    MasterController.ButtonY.pressed(controls::downward::buttonX);
-    MasterController.ButtonX.pressed(controls::downward::buttonY);
+    MasterController.ButtonY.pressed(controls::downward::buttonY);
+    MasterController.ButtonX.pressed(controls::downward::buttonX);
 
     // realeasing A B X Y 
     MasterController.ButtonA.released(controls::upward::buttonA);
     MasterController.ButtonB.released(controls::upward::buttonB);
-    MasterController.ButtonY.released(controls::upward::buttonX);
-    MasterController.ButtonX.released(controls::upward::buttonY);
+    MasterController.ButtonY.released(controls::upward::buttonY);
+    MasterController.ButtonX.released(controls::upward::buttonX);
 
     // pressing L1, L2
     MasterController.ButtonL1.pressed(controls::downward::buttonTL);

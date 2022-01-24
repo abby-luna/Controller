@@ -10,10 +10,6 @@ std::string to_string(double num){
   return strs.str();
 
 }
-
-
-
-
 void log(){
 
   std::string f_line = ""; 
